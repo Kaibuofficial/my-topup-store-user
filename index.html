@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Official Store</title><link rel="stylesheet" href="user.css"></head>
+<body>
+    <div class="container">
+        <header class="header"><div class="brand">MLBB Store</div><div class="wallet">Wallet: <span id="userWalletBalance">₹0</span></div><div class="menu-icon" id="menuIcon">&#9776;</div><nav class="navbar" id="navbar"><a href="index.html" class="active">Home</a><a href="topup.html">Top-Up Wallet</a><a href="history.html">Order History</a><a href="account.html">My Account</a></nav></header>
+        <div class="main-content-card">
+            <h2>MLBB Diamond Recharge</h2>
+            <form id="verifyForm"><div class="form-group"><label for="userId">User ID</label><input type="number" id="userId" required oninput="this.value = this.value.replace(/[^0-9]/g, '')"></div><div class="form-group"><label for="zoneId">Zone ID</label><input type="number" id="zoneId" required oninput="this.value = this.value.replace(/[^0-9]/g, '')"></div><button type="button" id="verifyBtn">Verify Username</button></form>
+            <div id="result"></div>
+            <div id="purchase-section"><h3 style="margin-top:20px;">Select a Product</h3><div id="product-grid" class="product-grid"></div><button type="button" id="proceedToPayBtn" disabled>Proceed to Pay</button></div>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>

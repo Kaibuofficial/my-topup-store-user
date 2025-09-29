@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Top-Up Wallet</title><link rel="stylesheet" href="user.css"></head>
+<body>
+    <div class="container">
+        <header class="header"><div class="brand">MLBB Store</div><div class="wallet">Wallet: <span id="userWalletBalance">₹0</span></div><div class="menu-icon" id="menuIcon">&#9776;</div><nav class="navbar" id="navbar"><a href="index.html">Home</a><a href="topup.html" class="active">Top-Up Wallet</a><a href="history.html">Order History</a><a href="account.html">My Account</a></nav></header>
+        <div class="main-content-card">
+            <h2>Top-Up Your Wallet</h2>
+            <p>Enter the amount you wish to add. This is a simulation of a real payment.</p>
+            <form id="topUpForm"><div class="form-group"><label for="topUpAmount">Amount (₹)</label><input type="number" id="topUpAmount" placeholder="e.g., 500" required></div><button type="submit">Add Funds</button><p id="topup-status"></p></form>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>
